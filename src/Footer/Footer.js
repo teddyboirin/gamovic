@@ -1,8 +1,9 @@
 import React from 'react';
+
 import './Footer.scss';
-import twitter from '../Asset/twitter.png'
-import twitch from '../Asset/twitch.png'
-import insta from '../Asset/insta.png'
+import twitter from '../Asset/twitter.png';
+import insta from '../Asset/insta.png';
+import twitch from '../Asset/twitch.png';
 
 
 
@@ -17,9 +18,9 @@ class Footer extends React.Component {
                         <li><a href="">Nous contacter</a></li>
                     </ul>
                     <div className="div_logo">
+                    <img src={twitch} alt="twitch" />
+                    <img src={insta} alt="insta" />
                     <img src={twitter} alt="twitter" />
-                    <img src={twitch} alt="twitter" />
-                    <img src={insta} alt="twitter" />
                     </div>
             </footer>
         );
