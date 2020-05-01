@@ -5,8 +5,6 @@ import twitter from '../Asset/twitter.png';
 import insta from '../Asset/insta.png';
 import twitch from '../Asset/twitch.png';
 
-
-
 class Footer extends React.Component {
     render() {
         return (
@@ -21,6 +19,11 @@ class Footer extends React.Component {
                     <img src={twitch} alt="twitch" />
                     <img src={insta} alt="insta" />
                     <img src={twitter} alt="twitter" />
+<<<<<<< HEAD
+=======
+                    <img src={twitch} alt="twitch" />
+                    <img src={insta} alt="insta" />
+>>>>>>> 77997d383432b4dbe7994f91dc1214671207238a
                     </div>
             </footer>
         );
