@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.scss';
-import twitter from '../Asset/twitter.png'
-import twitch from '../Asset/twitch.png'
-import insta from '../Asset/insta.png'
+import twitter from '../../Asset/twitter.png'
+import twitch from '../../Asset/twitch.png'
+import insta from '../../Asset/insta.png'
 
 class Footer extends React.Component {
     render() {
