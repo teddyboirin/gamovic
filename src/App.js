@@ -8,15 +8,8 @@ import Footer from "./Footer/Footer";
 function App() {
   return (
     <div className="App">
-            <h1>loka</h1>
-            <h1>loka</h1>
-            <h1>loka</h1>
-            <h1>loka</h1>
-            <h1>loka</h1>
-            <h1>loka</h1>
-            <h1>loka</h1>
-            <h1>loka</h1>
-    <Footer></Footer>
+     
+      <Footer></Footer>
     </div>
   );
 }

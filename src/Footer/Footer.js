@@ -4,8 +4,6 @@ import twitter from '../Asset/twitter.png'
 import twitch from '../Asset/twitch.png'
 import insta from '../Asset/insta.png'
 
-
-
 class Footer extends React.Component {
     render() {
         return (
@@ -18,8 +16,8 @@ class Footer extends React.Component {
                     </ul>
                     <div className="div_logo">
                     <img src={twitter} alt="twitter" />
-                    <img src={twitch} alt="twitter" />
-                    <img src={insta} alt="twitter" />
+                    <img src={twitch} alt="twitch" />
+                    <img src={insta} alt="insta" />
                     </div>
             </footer>
         );
