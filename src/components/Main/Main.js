@@ -13,18 +13,34 @@ class Main extends React.Component {
         return (
             <main>
                 <div className="div_one">
+
                     <img src={logo} alt="Gamovic" />
                     <h1>Tournois multiple</h1>
-                    <p>Des compétitions chaque jours sur les grands jeux du moment</p>
+                    <p>Des compétitions chaque jour sur les grands jeux du moment</p>
+                    
                 </div>
 
                 <div className="div_two">
+
+                    <div className="titre_tournois">
+                        <div className="carré"></div>
+                        <h1>Derniers tournois</h1>
+                    </div>
+
                     <div className="div_jeu">
-                        <img src={fortnite} alt="jeu" />
+                        <img src={fortnite} alt="jeu" className="jeu" />
                         <h1>Fortnite</h1>
                         <p>200$</p>
                         <img src={arrow} alt="jeu" />
                     </div>
+
+                    <div className="div_jeu">
+                        <img src={fifa} alt="jeu" className="jeu" />
+                        <h1>FIFA 20</h1>
+                        <p>200$</p>
+                        <img src={arrow} alt="jeu" />
+                    </div>
+
                 </div>
             </main>
             

@@ -1,49 +1,85 @@
-.div_one {
-    margin: 10vh 0 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+    background: linear-gradient(180deg, #272B50 0%, #191B33 100%);
+    box-shadow: 0px 9px 12px rgba(39, 43, 80, 0.3);    
 
-    h1 {
-        font-size: 18px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 500;
-        color: #0f0f0f;
-        margin: 5vh 0 2vh 0;
-    }
+    .div_one {
+        padding: 10vh 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    p {
-        margin: 0 10px 0 10px;
-        font-size: 18px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: #0f0f0f;
-        line-height: 120%;
-    }
+            h1 {
+                font-size: 14px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 500;
+                color: white;
+                margin: 6vh 0 2vh 0;
+            }
+
+            p {
+                margin: 0 14px 0 14px;
+                font-size: 14px;
+                font-weight: lighter;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                line-height: 120%;
+            }
 }
 
 .div_two {
     margin: 10vh 0 0 0;
+    padding-bottom: 8vh;
+    background-color: #F0EBEB;
 
-    .div_jeu {
-        background-color: #F5F5F5;
-        height: 13vh;
-        border-radius: 9px;
-        margin: 0 2vh 0 2vh;
+    .titre_tournois {
+        padding: 5vh 0 5vh 0;
         display: flex;
         align-items: center;
 
-        h1 {
-            font-size: 18px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 500;
-            color: #0f0f0f;
+        .carré {
+            width: 13px;
+            height: 13px;
+            display: block;
+            background: linear-gradient(180deg, #272B50 0%, #191B33 100%);
+            margin: 0 1vh 0 4vh;
         }
 
-        p {
-            font-size: 18px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 600;
-            color: #F16500;
+        h1 {
+            color: linear-gradient(180deg, #272B50 0%, #191B33 100%);
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 20px;
         }
+
     }
+
+    .div_jeu {
+        background: linear-gradient(180deg, #272B50 0%, #191B33 100%);
+        height: 70px;
+        border-radius: 9px;
+        margin: 0 4vh 0 4vh;
+        display: flex;
+        align-items: center;
+
+            h1 {
+                margin: 0 7vh 0 5vh;
+                font-size: 14px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                color: #FAFAFA;
+            }
+
+            p {
+                font-size: 18px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 600;
+                color: #7482FF;
+                margin: 0 4vh 0 0;
+            }
+
+            &:nth-child(3) {
+                margin: 15px 4vh 0 4vh;
+            }
+    }
+}
 }
