@@ -1,15 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-import Footer from "./Footer/Footer";
+import './reset.css';
+import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
+import Header from './components/Header/Header'
+import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
   return (
     <div className="App">
-     
-      <Footer></Footer>
+     <Header></Header>
+     <Main></Main>
+     <Footer></Footer>
     </div>
   );
 }
