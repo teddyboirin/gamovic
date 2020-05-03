@@ -40,6 +40,35 @@ class Main extends React.Component {
                         <p>200$</p>
                         <img src={arrow} alt="jeu" />
                     </div>
+                    
+                </div>
+
+                <div className="div_three">
+
+                    <div className="ligne">
+                        <div className="div_point">    
+                            <div className="point"></div>
+                            <div className="point"></div>
+                            <div className="point"></div>
+                        </div>              
+                    </div>     
+
+                    <div className="consigne">
+                        <h1>Participez à un tournois</h1>
+                        <h1>Atteignez le top 3</h1>
+                        <h1>Remportez le prix</h1>
+                    </div>
+                </div>
+
+                <div className="div_foor">
+
+                <div className="titre_tournois">
+
+                    <div className="carré"></div>
+                        <h1>Rejoignez-nous !</h1>
+                    </div>
+
+                    <button className="button_inscription">S'INSCRIRE</button>
 
                 </div>
             </main>

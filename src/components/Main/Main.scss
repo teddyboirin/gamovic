@@ -3,83 +3,173 @@ main {
     box-shadow: 0px 9px 12px rgba(39, 43, 80, 0.3);    
 
     .div_one {
-        padding: 10vh 0 0 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+            padding: 10vh 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+                h1 {
+                    font-size: 14px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 500;
+                    color: white;
+                    margin: 6vh 0 2vh 0;
+                }
+
+                p {
+                    margin: 0 14px 0 14px;
+                    font-size: 14px;
+                    font-weight: lighter;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    color: white;
+                    line-height: 120%;
+                }
+    }
+
+    .div_two {
+        margin: 10vh 0 0 0;
+        padding-bottom: 8vh;
+        background-color: #F0EBEB;
+
+        .titre_tournois {
+            padding: 5vh 0 5vh 0;
+            display: flex;
+            align-items: center;
+
+            .carré {
+                width: 13px;
+                height: 13px;
+                display: block;
+                background: linear-gradient(180deg, #272B50 0%, #191B33 100%);
+                margin: 0 1vh 0 4vh;
+            }
 
             h1 {
-                font-size: 14px;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: linear-gradient(180deg, #272B50 0%, #191B33 100%);
+                font-family: Roboto;
                 font-weight: 500;
-                color: white;
-                margin: 6vh 0 2vh 0;
+                font-size: 20px;
             }
 
-            p {
-                margin: 0 14px 0 14px;
-                font-size: 14px;
-                font-weight: lighter;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                color: white;
-                line-height: 120%;
-            }
-}
+        }
 
-.div_two {
-    margin: 10vh 0 0 0;
-    padding-bottom: 8vh;
-    background-color: #F0EBEB;
-
-    .titre_tournois {
-        padding: 5vh 0 5vh 0;
-        display: flex;
-        align-items: center;
-
-        .carré {
-            width: 13px;
-            height: 13px;
-            display: block;
+        .div_jeu {
             background: linear-gradient(180deg, #272B50 0%, #191B33 100%);
-            margin: 0 1vh 0 4vh;
-        }
+            height: 70px;
+            border-radius: 9px;
+            margin: 0 4vh 0 4vh;
+            display: flex;
+            align-items: center;
 
-        h1 {
-            color: linear-gradient(180deg, #272B50 0%, #191B33 100%);
-            font-family: Roboto;
-            font-weight: 500;
-            font-size: 20px;
-        }
+                .jeu {
+                    margin: 1px 0 0 0;
+                }
 
+                h1 {
+                    margin: 0 7vh 0 5vh;
+                    font-size: 14px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 400;
+                    color: #FAFAFA;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 600;
+                    color: #7482FF;
+                    margin: 0 4vh 0 0;
+                }
+
+                &:nth-child(3) {
+                    margin: 15px 4vh 0 4vh;
+                }
+        }
     }
 
-    .div_jeu {
-        background: linear-gradient(180deg, #272B50 0%, #191B33 100%);
-        height: 70px;
-        border-radius: 9px;
-        margin: 0 4vh 0 4vh;
+    .div_three {
         display: flex;
-        align-items: center;
+        
+        .ligne {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: 1px;
+            background: #7482FF;
+            margin: 0 0 0 35px;
+        }
+
+        .div_point {
+            
+            .point {
+                border-radius: 100px;
+                height: 11px;
+                width: 11px;
+                display: block;
+                background: #7482FF;
+
+                &:nth-child(2) {
+                    margin: 75px 0 75px 0;
+                }
+            }
+        }
+
+        .consigne {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 0 0 7vh;
 
             h1 {
-                margin: 0 7vh 0 5vh;
                 font-size: 14px;
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: 400;
-                color: #FAFAFA;
+                color: white;    
+                
+                &:nth-child(2) {
+                    margin: 72px 0 72px 0;
+                }
             }
-
-            p {
-                font-size: 18px;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: 600;
-                color: #7482FF;
-                margin: 0 4vh 0 0;
-            }
-
-            &:nth-child(3) {
-                margin: 15px 4vh 0 4vh;
-            }
+        }
     }
-}
+
+    .div_foor {
+        padding: 5vh 0 8vh 0;
+        background-color: #F0EBEB;
+
+        .titre_tournois {
+            margin: 0 0 5vh 0;
+            display: flex;
+            align-items: center;
+
+            .carré {
+                width: 13px;
+                height: 13px;
+                display: block;
+                background: linear-gradient(180deg, #272B50 0%, #191B33 100%);
+                margin: 0 1vh 0 4vh;
+            }
+
+            h1 {
+                color: linear-gradient(180deg, #272B50 0%, #191B33 100%);
+                font-family: Roboto;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        } 
+
+        .button_inscription {
+            margin: 2vh 0 0 0;
+            border: none;
+            background: linear-gradient(180deg, #272B50 0%, #191B33 100%);
+            color: white;
+            padding: 10px 40px 10px 40px;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 5px;
+        }
+    }
+  
 }
