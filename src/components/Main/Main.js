@@ -3,18 +3,26 @@ import logo from '../../Asset/logo.png';
 import fortnite from '../../Asset/fortnite.png';
 import fifa from '../../Asset/fifa.png';
 import arrow from '../../Asset/arrow.png';
-
-
-
 import './Main.scss';
 
+
+
 class Main extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          value: 'Votre Email'
+        };
+    }
+    
+
     render() {
         return (
             <main>
                 <div className="div_one">
 
-                    <img src={logo} alt="Gamovic" />
+                    <h1 className="logo">Gamovic</h1>
                     <h1>Tournois multiple</h1>
                     <p>Des compétitions chaque jour sur les grands jeux du moment</p>
                     
@@ -65,11 +73,13 @@ class Main extends React.Component {
                 <div className="titre_tournois">
 
                     <div className="carré"></div>
-                        <h1>Rejoignez-nous !</h1>
+                        <h1>Newsletter</h1>
                     </div>
 
-                    <button className="button_inscription">S'INSCRIRE</button>
-
+                    <form onSubmit={this.handleSubmit}>
+                    <input type="text" placeholder={this.state.value} className="input_text"/>
+                    <input type="submit" value="S'abonner" className="input_submit" />
+                    </form>
                 </div>
             </main>
             

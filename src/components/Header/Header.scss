@@ -40,7 +40,7 @@ header {
 .menu-open {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100% - 80px);
   background: linear-gradient(190deg, #272B50 0%, #191B33 200%);
   display: flex;
   align-items: center;
