@@ -1,42 +1,137 @@
 footer {
-    width: 100vw;
+    width: 100%;
+    height: 33vh;
+    background: linear-gradient(180deg, #272B50 0%, #191B33 100%);
 
-    ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    h1 {
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        color: white;
+        padding: 3vh 0 4vh 0;
+        letter-spacing: 0.1em;
+    }
 
-        li {
-            font-size: 14px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 1vh 0 1vh 0;
+    .right-left {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 5vh 0;
+        .left {
+            margin: 0 5vh 0 0;
+            ul {
+                li {
+                    font-size: 14px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: lighter;
+                    color: white;
+                    letter-spacing: 0.5px;
 
-                a {
-                    text-decoration: none;
-                    color: black;
-                    &:hover {
-                        color: #154856;
-                        font-weight: 600;
+                    &:nth-child(2) {
+                        margin: 2vh 0 2vh 0;
                     }
                 }
+            }
         }
-    };
 
-    .div_logo {
+        .right {
+            ul {
+                li {
+                    font-size: 14px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: lighter;
+                    color: white;
+                    letter-spacing: 0.5px;
+
+                    &:nth-child(2) {
+                        margin: 2vh 0 2vh 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
         display: flex;
-        align-items: center;
         justify-content: center;
 
-        img {
-            width: 6vh;
+        p {
+            font-size: 13px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: lighter;
+            color: white;
+            letter-spacing: 0.1em;  
 
-                &:nth-child(2) {
-                    margin: 2vh 3vh 2vh 3vh;
+            &:nth-child(1) {
+                &::after {
+                    content: "-";
+                    color: white;
+                    margin: 0 1vh 0 1vh;
                 }
+            }
+
+            &:nth-child(2) {
+                margin: 0 0 0 0;
+
+                &::after {
+                    content: "-";
+                    color: white;
+                    margin: 0 1vh 0 1vh;
+                }
+    
+            }
         }
     }
 };
+
+@media only screen and (min-width: 768px) {
+    footer {
+        height: 33vh;
+    
+        h1 {
+            font-size: 18px;
+            padding: 3vh 0 4vh 0;
+        }
+    
+        .right-left {
+            .left {
+                margin: 0 8vh 0 0;
+                ul {
+                    li {
+                        font-size: 16px;
+                        letter-spacing: 0.8px;
+                    }
+                }
+            }
+    
+            .right {
+                ul {
+                    li {
+                        font-size: 16px;
+                        letter-spacing: 0.8px;
+                    }
+                }
+            }
+        }
+    
+        .bottom {    
+            p {
+                font-size: 15px;
+                letter-spacing: 0.2em;  
+    
+                &:nth-child(1) {
+                    &::after {
+                        margin: 0 2vh 0 2vh;
+                    }
+                }
+    
+                &:nth-child(2) {
+    
+                    &::after {
+                        margin: 0 2vh 0 2vh;
+                    }
+        
+                }
+            }
+        }
+    };
+}

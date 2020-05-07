@@ -33,8 +33,6 @@ export default function Header(props) {
       <ul>
         <li><a href="">Accueil</a></li>
         <li><a href="">Informations</a></li>
-        <li><a href="">Inscription</a></li>
-        <li><a href="">Connexion</a></li>
         <li><a href="">Nous contacter</a></li>
       </ul>
     </div>
