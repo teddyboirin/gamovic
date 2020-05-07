@@ -6,6 +6,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
 
   .logo {
     font-size: 15px;
@@ -40,7 +43,7 @@ header {
 .menu-open {
   position: absolute;
   width: 100%;
-  height: calc(100% - 80px);
+  height: calc(120% - 80px);
   background: linear-gradient(190deg, #272B50 0%, #191B33 200%);
   display: flex;
   align-items: center;
@@ -48,6 +51,9 @@ header {
   visibility: hidden;
   opacity: 0;
   transition: 1s;
+  z-index: 0;
+  position: fixed;
+
   ul {
     list-style: none;
     li {
