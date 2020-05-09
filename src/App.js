@@ -7,6 +7,9 @@ import Header from './components/Header/Header'
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 
+import Tournois from './components/Tournois/Tournois'
+
+
 
 function App() {
   return (
@@ -29,7 +32,7 @@ function App() {
     </Helmet>
     
      <Header></Header>
-     <Main></Main>
+     <Tournois></Tournois> 
      <Footer></Footer>
     </div>
   );
